@@ -14,6 +14,19 @@ class ContainDuplicate {
     }
     return false
   }
+
+  //  func isContainDuplicate(_ nums: [Int]) -> Bool {
+  //   var seen = Set<Int>()
+    
+  //   for num in nums {
+  //     if seen.contains(num) {
+  //       return true
+  //     }
+  //     seen.insert(num)
+  //   }
+    
+  //   return false
+  // }
 }
 
 let arr = [1,2,3,4,4,4,5,6]
