@@ -85,14 +85,11 @@ class LinkedList<T: Equatable> {
 let list = LinkedList<Int>()
 list.append(value: 10)
 list.append(value: 20)
-list.append(value: 30)
-list.printList()
 
 list.prepend(value: 5)
 list.printList()
 
 list.removeFirst()
-list.printList()
 
 list.removeLast()
 list.printList()
