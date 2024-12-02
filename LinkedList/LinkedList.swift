@@ -12,7 +12,6 @@ class Node<T> {
 class LinkedList<T: Equatable> {
     var head: Node<T>?
     
-    // Add an element at the end of the list
     func append(value: T) {
         let newNode = Node(value: value)
         
