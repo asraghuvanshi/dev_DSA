@@ -9,6 +9,31 @@ class Solution {
         }
         return [0]
     }
+
+    func twoSumSortedArray(_ nums: [Int], _ target: Int) -> [Int] {
+        let indexedNums = nums.enumerated().map { (index, num) in (index, num) }
+       // let indexedNums:[(Int, Int)] = Array(nums.enumerated())
+
+
+        let sorted = indexedNums.sorted { $0.1 < $1.1 }
+        
+        var left = 0
+        var right = sorted.count - 1
+        
+        while left < right {
+            let sum = sorted[left].1 + sorted[right].1
+            if sum == target {
+                return [sorted[left].0, sorted[right].0]  
+            } else if sum < target {
+                left += 1
+            } else {
+                right -= 1
+            }
+        }
+        
+        return []
+    }
+
 }
 
 let numArray = [2,7,11,15]
